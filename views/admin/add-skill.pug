@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  h1 Add Skill
+  form(action="/admin/add-skill" method="POST")
+    label(for="name") Skill Name:
+    input(type="text" name="name" required)
+    label(for="proficiency") Proficiency:
+    select(name="proficiency" required)
+      option(value="Beginner") Beginner
+      option(value="Intermediate") Intermediate
+      option(value="Advanced") Advanced
+    button(type="submit") Add Skill
+  a(href="/admin/add-project") Add Project

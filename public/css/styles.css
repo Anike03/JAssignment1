@@ -1,0 +1,94 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #00ffff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  /* Project and Skill Containers */
+  .project, .skill {
+    background-color: #444;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    width: 100%; /* Take full width of the parent container */
+    max-width: 600px; /* Limit maximum width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Center headings for Projects and Skills */
+  #projects h2, #skills h2 {
+    text-align: center; /* Center the text */
+    color: #ff00ff; /* Keep the existing color */
+    margin-bottom: 20px; /* Add some space below the heading */
+   }
+  /* Project and Skill Content */
+  .project h3, .skill h3 {
+    margin-top: 0;
+    color: #ff00ff;
+  }
+  
+  .project p, .skill p {
+    margin: 10px 0;
+  }
+  
+  .project img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  .project a, .skill a {
+    color: #00ffff;
+    text-decoration: none;
+  }
+  
+  .project a:hover, .skill a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .project, .skill {
+      padding: 10px;
+    }
+  }

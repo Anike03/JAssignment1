@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  section#projects
+    h2 Projects
+    if projects.length > 0
+      each project in projects
+        .project
+          h3= project.title
+          p= project.description
+          img(src=project.imageUrl alt="Project Image")
+          a(href=project.githubLink target="_blank") GitHub Link
+    else
+      p No projects found.
+
+  section#skills
+    h2 Skills
+    if skills.length > 0
+      each skill in skills
+        .skill
+          h3= skill.name
+          p= skill.proficiency
+    else
+      p No skills found.
