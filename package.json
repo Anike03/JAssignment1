@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-  "dev": "nodemon ./app.js",       
-  "start": "node ./app.js",         
-  "build": "echo 'No build needed'" 
+  "dev": "nodemon app.js",
+  "start": "node app.js",
+  "build": "echo 'Skipping build'",
+  "vercel-build": "npm install && echo 'Pre-build complete'"
 },
   "keywords": [],
   "author": "",
