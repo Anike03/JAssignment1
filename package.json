@@ -2,11 +2,9 @@
   "name": "project",
   "version": "1.0.0",
   "main": "app.js",
-"scripts": {
-  "start": "node app.js",
-  "build": "echo 'Skipping build' && exit 0",
-  "vercel-build": "npm install"
-},
+  "scripts": {
+    "dev": "nodemon ./app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
